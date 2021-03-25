@@ -6,9 +6,11 @@ public class VariableDemo2 {
 		  static void main(String[] args) {
 			 
 			  
-			  int k=10;
-			  int i=10;
-			  int c=k+i;
+			  int a=55;
+			  int b=99;
+			  int c=a+b;
+			  
+			  
 		//	  int k=40; // duplicate variable
 
 	}

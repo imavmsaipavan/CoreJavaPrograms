@@ -7,6 +7,12 @@ public class B {
        String str2="Second line";
        String str3="Third line";
        String str4="Fourth line";
+       
+       String str5="second line";
+       String str6="third line";
+       
+       
+       
 	}
 
 }

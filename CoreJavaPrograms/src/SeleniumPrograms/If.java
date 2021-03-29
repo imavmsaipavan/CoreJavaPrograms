@@ -8,6 +8,8 @@ public class If {
 		boolean c=true;
 		boolean f=false;
 		boolean d=true;
+		String str="this is a new string";
+				
 		
 		
 		

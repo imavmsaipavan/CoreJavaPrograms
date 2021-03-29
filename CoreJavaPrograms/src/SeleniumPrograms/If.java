@@ -9,21 +9,6 @@ public class If {
 		boolean f=false;
 		boolean d=true;
 
-		String str="this is a new string";
-	
-    if(a==true) {
-    	System.out.println("passed");
-    	if(b==true) {
-    		System.out.println("passed");
-    		if(c==true) {
-    			System.out.println("passed");
-    		}
-    	}
-    }
-    else {
-    	System.out.println("this is false");
-    }
-    String first= "this is first class";
+		
 	}
-
 }

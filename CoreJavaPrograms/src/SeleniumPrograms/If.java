@@ -8,11 +8,9 @@ public class If {
 		boolean c=true;
 		boolean f=false;
 		boolean d=true;
+
 		String str="this is a new string";
-				
-		
-		
-		
+	
     if(a==true) {
     	System.out.println("passed");
     	if(b==true) {

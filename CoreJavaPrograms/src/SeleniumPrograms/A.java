@@ -6,7 +6,8 @@ public class A {
        String str="first line";
        String str1="second line"; 
        String str2="third line";
-      
+       
+       
 	}
 
 }

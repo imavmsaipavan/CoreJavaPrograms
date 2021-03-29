@@ -7,6 +7,8 @@ public class IfDemo {
 		boolean c=true;
 		boolean f=false;
 		boolean d=true;
+		String str= "this is also a new string";
+		
 	}
 
 }

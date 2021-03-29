@@ -23,6 +23,7 @@ public class If {
     else {
     	System.out.println("this is false");
     }
+    String first= "this is first class";
 	}
 
 }

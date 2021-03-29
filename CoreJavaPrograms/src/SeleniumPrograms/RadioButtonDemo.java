@@ -1,8 +1,10 @@
 package SeleniumPrograms;
 import org.openqa.selenium.By;
+import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.ui.Select;
 
 public class RadioButtonDemo {
 
@@ -41,6 +43,10 @@ public class RadioButtonDemo {
 	     else {
 	    	 System.out.println("CheckBox is not selected");
 	     }
+		 Select sel= new Select(driver.findElement(By.name("fromPort")));
+		 sel.selectByValue("Frankfurt");
+		 
+		 
 		 
 	     }
 }

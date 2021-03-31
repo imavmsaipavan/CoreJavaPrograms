@@ -10,6 +10,7 @@ public class CheckBoxDemo1 {
 	     WebDriver driver = new ChromeDriver();
 	     driver.get("https://www.calculator.net/mortgage-calculator.html");
 	     
+	     
 	     boolean display= driver.findElement(By.xpath("//*[@id='content']/table[1]/tbody/tr/td[1]/table/tbody/tr[6]/td/label/span")).isDisplayed();
 	     boolean enable= driver.findElement(By.xpath("//*[@id='content']/table[1]/tbody/tr/td[1]/table/tbody/tr[6]/td/label/span")).isEnabled();
 	     boolean select = driver.findElement(By.xpath("//*[@id='content']/table[1]/tbody/tr/td[1]/table/tbody/tr[6]/td/label/span")).isSelected();

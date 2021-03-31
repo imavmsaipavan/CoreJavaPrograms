@@ -8,6 +8,7 @@ public class If {
 		boolean c=false;
 		boolean f=true;
 		boolean d=false;
+		boolean e=false;
 
 		
 	}

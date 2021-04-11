@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="SeleniumPhase2.AlertDemo1">
+      <class name="seleniumPhase2.ExplicitDemo1">
         <methods>
-          <include name="alertTest"/>
+          <include name="explicitTest"/>
         </methods>
-      </class> <!-- SeleniumPhase2.AlertDemo1 -->
+      </class> <!-- seleniumPhase2.ExplicitDemo1 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

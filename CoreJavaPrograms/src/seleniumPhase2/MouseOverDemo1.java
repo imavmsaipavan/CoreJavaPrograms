@@ -1,4 +1,4 @@
-package SeleniumPhase2;
+package seleniumPhase2;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -10,7 +10,6 @@ import org.testng.annotations.Test;
 public class MouseOverDemo1 {
 	@Test
 	public void mouseOverDemo() {
-		
 	
 	System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+"\\Webdrivers\\chromedriver.exe");
     WebDriver driver = new ChromeDriver();

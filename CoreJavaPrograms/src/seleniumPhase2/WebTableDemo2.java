@@ -1,4 +1,4 @@
-package SeleniumPhase2;
+package seleniumPhase2;
 
 import java.util.List;
 

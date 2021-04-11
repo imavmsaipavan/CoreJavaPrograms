@@ -1,4 +1,4 @@
-package SeleniumPhase2;
+package seleniumPhase2;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;

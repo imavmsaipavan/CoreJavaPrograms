@@ -1,4 +1,4 @@
-package SeleniumPrograms;
+ackage SeleniumPrograms;
 
 public class A {
 

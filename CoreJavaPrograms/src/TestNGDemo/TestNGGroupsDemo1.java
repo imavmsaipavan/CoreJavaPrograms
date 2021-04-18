@@ -1,6 +1,5 @@
 package TestNGDemo;
 
-import org.testng.SkipException;
 import org.testng.annotations.Test;
 
 public class TestNGGroupsDemo1 {

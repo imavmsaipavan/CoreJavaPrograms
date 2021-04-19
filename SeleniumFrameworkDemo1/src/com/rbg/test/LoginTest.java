@@ -4,7 +4,6 @@ import java.io.File;
 import java.io.IOException;
 
 import org.apache.commons.io.FileUtils;
-import org.apache.xmlbeans.impl.xb.xsdschema.Public;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.testng.annotations.AfterClass;
@@ -61,13 +60,13 @@ public class LoginTest {
 	@Test
 	public void loginWithinValidCredentials() throws IOException
 	{
-		 extentLogger = parentExtentLogger.createNode("with valid credentials");
+		 extentLogger = parentExtentLogger.createNode("with invalid credentials");
 		   
 		
 		GenericFuntion1 key = new GenericFuntion1();
 		key.openBrowser("Chrome");
 		key.enterURL("http://demo.guru99.com/test/newtours/index.php");
-		key.enterData("name", "userName", "Mercury");
+		key.enterData("name", "userName", "invalid");
 		key.enterData("name", "password", "Password");
 
 	    TakesScreenshot ts = (TakesScreenshot) key.driver;
@@ -76,7 +75,7 @@ public class LoginTest {
 		String destination = System.getProperty("user.dir")+"\\Screenshots\\test2.png";
 		File finalDestination = new File(destination);
 		FileUtils.copyFile(source, finalDestination);
-		extentLogger.log(Status.PASS,MarkupHelper.createLabel("TestCase1" , ExtentColor.GREEN));
+		extentLogger.log(Status.PASS,MarkupHelper.createLabel("TestCase1" , ExtentColor.RED));
     	extentLogger.pass("",MediaEntityBuilder.createScreenCaptureFromPath(destination).build());
     	
 	}

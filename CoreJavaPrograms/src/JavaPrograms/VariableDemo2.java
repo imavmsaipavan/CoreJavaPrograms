@@ -1,4 +1,4 @@
-
+package JavaPrograms;
 public class VariableDemo2 {
   int i=10;
   static int j=20;

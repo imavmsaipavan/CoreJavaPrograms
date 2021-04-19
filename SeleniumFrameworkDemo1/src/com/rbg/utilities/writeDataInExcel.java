@@ -14,7 +14,7 @@ public class writeDataInExcel {
 	public void writeData() throws IOException {
 		File file=new File("C:\\Users\\mani\\Downloads\\Excel.xlsx");
 		FileInputStream streams= new FileInputStream(file);
-		XSSFWorkbook workBook = new XSSFWorkbook(streams);
+		XSSFWorkbook workBook = new XSSFWorkbook("C:\\Users\\mani\\Downloads\\Excel.xlsx");
 		XSSFSheet sheet = workBook.getSheetAt(0);
 		
 		sheet.getRow(1).createCell(2).setCellValue("Writing Data in 2nd Row");

@@ -1,4 +1,4 @@
-
+package JavaPrograms;
 public class DemoArray {
 
 	public static void main(String[] args) {

@@ -41,6 +41,7 @@ public class RadioButtonDemo {
 	     else {
 	    	 System.out.println("CheckBox is not selected");
 	     }
+	     
 		 Select sel= new Select(driver.findElement(By.name("fromPort")));
 		 sel.selectByValue("Frankfurt");
 		 

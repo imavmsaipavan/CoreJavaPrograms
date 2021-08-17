@@ -25,33 +25,36 @@ public class ExtentReportDemo2 {
 	public static ExtentTest extentLogger;
 	public ExtentTest parentExtentLogger;
 
-    @Test
-    public void externalReportTest1() throws IOException
-    {
-    	htmlReporter = new ExtentHtmlReporter("C:\\Users\\mani\\Desktop\\extentReport\\"+"test1.html");
+	@Test
+	public void externalReportTest1() throws IOException
+	{
+		htmlReporter = new ExtentHtmlReporter("C:\\Users\\mani\\Desktop\\extentReport\\"+"test2.html");
 		extent = new ExtentReports();
-        extent.attachReporter(htmlReporter);
-        parentExtentLogger = extent.createTest("Test1");
-        extentLogger = parentExtentLogger.createNode("Add User with Madatory Fields");
-   
-    
-    	System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+"\\Webdrivers\\chromedriver.exe");
-        WebDriver driver = new ChromeDriver();
-       driver.get("http://demo.guru99.com/test/newtours/reservation.php");
+		extent.attachReporter(htmlReporter);
+		parentExtentLogger = extent.createTest("Test1");
+		extentLogger = parentExtentLogger.createNode("Add User with Madatory Fields");
 
-        TakesScreenshot ts = (TakesScreenshot) driver;
-    	File source = ts.getScreenshotAs(OutputType.FILE);
 
-    	String destination = "C:\\Users\\mani\\Desktop\\ScreenShot\\screen.png";
-    	File finalDestination = new File(destination);
-    	FileUtils.copyFile(source, finalDestination);
-    	extentLogger.log(Status.PASS,MarkupHelper.createLabel("TestCase1" , ExtentColor.GREEN));
-    	
-    	extentLogger.pass("",MediaEntityBuilder.createScreenCaptureFromPath(destination).build());
-    	extentLogger = parentExtentLogger.createNode("Test2");
-    	extentLogger.log(Status.PASS,MarkupHelper.createLabel("TestCase1" , ExtentColor.GREEN));
-    	
+		System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+"\\Webdrivers\\chromedriver.exe");
+		WebDriver driver = new ChromeDriver();
+		driver.manage().window().maximize();
+		driver.get("http://demo.guru99.com/test/newtours/reservation.php");
 
-    	extent.flush();
-}
+		TakesScreenshot ts = (TakesScreenshot) driver;
+		File source = ts.getScreenshotAs(OutputType.FILE);
+
+		String destination = "C:\\Users\\mani\\Desktop\\ScreenShot\\screen1.png";
+		File finalDestination = new File(destination);
+		FileUtils.copyFile(source, finalDestination);
+
+		extentLogger.log(Status.PASS,MarkupHelper.createLabel("TestCase is Passed" , ExtentColor.GREEN));
+
+		extentLogger.pass("",MediaEntityBuilder.createScreenCaptureFromPath(destination).build());
+
+		extentLogger = parentExtentLogger.createNode("Test2");
+		extentLogger.log(Status.FAIL,MarkupHelper.createLabel("TestCase2" , ExtentColor.RED));
+
+
+		extent.flush();
+	}
 }

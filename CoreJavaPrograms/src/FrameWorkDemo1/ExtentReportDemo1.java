@@ -18,11 +18,11 @@ public class ExtentReportDemo1 {
     @Test
     public void externalReportTest1()
     {
-    	htmlReporter = new ExtentHtmlReporter("C:\\Users\\mani\\Desktop\\extentReport\\"+"test1.html");
+    	htmlReporter = new ExtentHtmlReporter("C:\\Users\\mani\\Desktop\\extentReport\\"+"test5.html");
 		extent = new ExtentReports();
         extent.attachReporter(htmlReporter);
         parentExtentLogger = extent.createTest("Test1");
-        extentLogger = parentExtentLogger.createNode("Add User with Madatory Fields");
+        extentLogger = parentExtentLogger.createNode("Adds User with Madatory Fields");
     	extentLogger.log(Status.PASS,MarkupHelper.createLabel("TestCase1" , ExtentColor.GREEN));
     	extentLogger.log(Status.FAIL,MarkupHelper.createLabel("TestCase2" , ExtentColor.RED));
     	extentLogger.log(Status.SKIP,MarkupHelper.createLabel("TestCase1" , ExtentColor.GREY));

@@ -20,9 +20,9 @@ public class DataProviderDemo2 {
 	     	     	
 	}
     @DataProvider
-    public String[][] setData()
+    public Object[][] setData()
     {
-    	String[][] s1=new String[3][2];
+    	Object[][] s1=new Object[3][2];
     	s1[0][0]="sai";
     	s1[0][1]="pavan";
     	

@@ -1,20 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Suite]">
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="TestNGDemo.TestNGDemo3">
+      <class name="seleniumPhase2.RadioButtonDemo">
         <methods>
-          <include name="loginTest"/>
-          <include name="customerDetails"/>
+          <include name="webTable"/>
         </methods>
-      </class> <!-- TestNGDemo.TestNGDemo3 -->
-      <class name="TestNGDemo.TestNGDemo4">
-        <methods>
-          <include name="funC"/>
-          <include name="funB"/>
-        </methods>
-      </class> <!-- TestNGDemo.TestNGDemo4 -->
+      </class> <!-- seleniumPhase2.RadioButtonDemo -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

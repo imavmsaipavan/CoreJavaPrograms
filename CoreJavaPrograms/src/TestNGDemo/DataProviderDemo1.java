@@ -21,24 +21,28 @@ public class DataProviderDemo1 {
 		return o1;
 	}
 	@Test(dataProvider = "setData2")
-	public void funB(int i, int j)
+	public void funB(int i, int j, int k)
 	{
 		System.out.println("funB of DataProviderDemo1");
 		System.out.println(i);
 		System.out.println(j);
+		System.out.println(k);
 	}
 	@DataProvider
 	public Object[][] setData2()
 	{
-	   Object[][] o2=new Object[3][2];
+	   Object[][] o2=new Object[3][3];
 	   o2[0][0]=10;
 	   o2[0][1]=20;
+	   o2[0][2]=25;
 	   
 	   o2[1][0]=30;
 	   o2[1][1]=40;
+	   o2[1][2]=25;
 	   
 	   o2[2][0]=50;
 	   o2[2][1]=60;
+	   o2[2][2]=25;
 	   return o2;
 	}
 }

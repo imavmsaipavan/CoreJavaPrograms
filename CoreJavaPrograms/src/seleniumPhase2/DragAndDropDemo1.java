@@ -9,7 +9,7 @@ import org.testng.annotations.Test;
 public class DragAndDropDemo1 {
 	@Test
 	public void DragAndDropDemo1() throws InterruptedException {
-	System.setProperty("webdriver.chrome.driver", "C:\\Users\\mani\\Desktop\\Drivers\\chromedriver_win32\\chromedriver.exe");
+	System.setProperty("webdriver.chrome.driver", ".//WebDrivers//chromedriver.exe");
     WebDriver driver = new ChromeDriver();
     driver.get("https://jqueryui.com/droppable/");
     
@@ -20,6 +20,7 @@ public class DragAndDropDemo1 {
     
     Actions act=new Actions(driver);
     act.dragAndDrop(draggable, droppable).perform();
+    
 	}
     
 }

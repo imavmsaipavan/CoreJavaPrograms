@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="4" passed="4">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Sample Suite" duration-ms="104" started-at="2021-06-02T06:12:27Z" finished-at="2021-06-02T06:12:27Z">
+    <groups>
+      <group name="Sanity">
+        <method signature="TestNGGroupsDemo1.funA()[pri:0, instance:TestNGDemo.TestNGGroupsDemo1@5fe5c6f]" name="funA" class="TestNGDemo.TestNGGroupsDemo1"/>
+        <method signature="TestNGGroupsDemo1.funB()[pri:0, instance:TestNGDemo.TestNGGroupsDemo1@5fe5c6f]" name="funB" class="TestNGDemo.TestNGGroupsDemo1"/>
+      </group> <!-- Sanity -->
+      <group name="Regression">
+        <method signature="TestNGGroupsDemo1.funC()[pri:0, instance:TestNGDemo.TestNGGroupsDemo1@5fe5c6f]" name="funC" class="TestNGDemo.TestNGGroupsDemo1"/>
+        <method signature="TestNGGroupsDemo1.funD()[pri:0, instance:TestNGDemo.TestNGGroupsDemo1@5fe5c6f]" name="funD" class="TestNGDemo.TestNGGroupsDemo1"/>
+      </group> <!-- Regression -->
+    </groups>
+    <test name="testing" duration-ms="104" started-at="2021-06-02T06:12:27Z" finished-at="2021-06-02T06:12:27Z">
+      <class name="TestNGDemo.TestNGGroupsDemo1">
+        <test-method status="PASS" signature="funA()[pri:0, instance:TestNGDemo.TestNGGroupsDemo1@5fe5c6f]" name="funA" duration-ms="14" started-at="2021-06-02T06:12:27Z" finished-at="2021-06-02T06:12:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- funA -->
+        <test-method status="PASS" signature="funB()[pri:0, instance:TestNGDemo.TestNGGroupsDemo1@5fe5c6f]" name="funB" duration-ms="0" started-at="2021-06-02T06:12:27Z" finished-at="2021-06-02T06:12:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- funB -->
+        <test-method status="PASS" signature="funC()[pri:0, instance:TestNGDemo.TestNGGroupsDemo1@5fe5c6f]" name="funC" duration-ms="0" started-at="2021-06-02T06:12:27Z" finished-at="2021-06-02T06:12:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- funC -->
+        <test-method status="PASS" signature="funD()[pri:0, instance:TestNGDemo.TestNGGroupsDemo1@5fe5c6f]" name="funD" duration-ms="1" started-at="2021-06-02T06:12:27Z" finished-at="2021-06-02T06:12:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- funD -->
+      </class> <!-- TestNGDemo.TestNGGroupsDemo1 -->
+    </test> <!-- testing -->
+  </suite> <!-- Sample Suite -->
+</testng-results>

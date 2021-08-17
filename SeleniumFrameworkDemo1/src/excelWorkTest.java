@@ -22,9 +22,9 @@ public class excelWorkTest {
 	{
 		workBook = new XSSFWorkbook("C:\\Users\\mani\\Downloads\\Excel.xlsx");
 		sheet=workBook.getSheet("Sheet1");				
-	XSSFRow row=sheet.getRow(0);
-	int colCount=row.getLastCellNum();
-	System.out.println(colCount);
+	    XSSFRow row=sheet.getRow(0);
+	    int colCount=row.getLastCellNum();
+	    System.out.println(colCount);
 }
 	@Test(priority = 2)
 	public void readDataFromExcel() throws IOException

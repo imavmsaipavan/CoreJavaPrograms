@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="Test">
+    <classes>
+      <class name="seleniumPhase2.CheckBoxDemo2"/>
+       <class name="seleniumPhase2.CloseAndQuitDemo1"/>
+      <!-- <class name="TestNGDemo.DataProviderDemo2"/>
+      <class name="TestNGDemo.TestNGAssertDemo1"/>
+      <class name="TestNGDemo.AnnotationDemo2"/>
+      <class name="TestNGDemo.TestNGAssertDemo2"/>
+      <class name="TestNGDemo.AnnotationDemo3"/>
+      <class name="TestNGDemo.TestNGGroupsDemo1"/>
+      <class name="TestNGDemo.AnnotationDemo1"/>
+      <class name="TestNGDemo.AnnotationDemo4"/>
+      <class name="TestNGDemo.JunitDemo1"/>
+      <class name="TestNGDemo.TestNGDemo4"/>
+      <class name="TestNGDemo.TestNGDemo3"/>
+      <class name="TestNGDemo.TestNGDemo2"/>
+      <class name="TestNGDemo.TestNGDemo1"/> -->
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

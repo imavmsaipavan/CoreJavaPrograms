@@ -3,18 +3,29 @@
 <suite name="Failed suite [example suite 1]">
   <test thread-count="5" name="Regression suite 1(failed)">
     <classes>
-      <class name="TestNGDemo.TestNGDemo3">
-        <methods>
-          <include name="loginTest"/>
-          <include name="customerDetails"/>
-        </methods>
-      </class> <!-- TestNGDemo.TestNGDemo3 -->
       <class name="TestNGDemo.TestNGDemo4">
         <methods>
           <include name="funC"/>
           <include name="funB"/>
         </methods>
       </class> <!-- TestNGDemo.TestNGDemo4 -->
+      <class name="TestNGDemo.TestNGAssertDemo1">
+        <methods>
+          <include name="funD"/>
+          <include name="funB"/>
+        </methods>
+      </class> <!-- TestNGDemo.TestNGAssertDemo1 -->
+      <class name="TestNGDemo.DataProviderDemo2">
+        <methods>
+          <include name="loginTest" invocation-numbers="0 1 2"/>
+        </methods>
+      </class> <!-- TestNGDemo.DataProviderDemo2 -->
+      <class name="TestNGDemo.TestNGDemo3">
+        <methods>
+          <include name="loginTest"/>
+          <include name="customerDetails"/>
+        </methods>
+      </class> <!-- TestNGDemo.TestNGDemo3 -->
     </classes>
   </test> <!-- Regression suite 1(failed) -->
 </suite> <!-- Failed suite [example suite 1] -->

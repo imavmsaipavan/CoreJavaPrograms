@@ -10,6 +10,9 @@ public class StringDemo1 {
  String s2=new String("This is SAI PAVAN");
  System.out.println(s2);
  
+ String str="{('abc':'123')},{('def':'456')},{('ghi':'789')}";
+//System.out.println(str.replace('abc':'123', 'abc'='123'));
+ 
 	}
 
 }

@@ -13,6 +13,8 @@ public class ExcelDemoTest {
 	XSSFSheet sheet=workBook.getSheet("Sheet1");		
 	int rowCount=sheet.getPhysicalNumberOfRows();
 	System.out.println(rowCount);
+	int colCount=sheet.getColumnWidth(0);
+	System.out.println(colCount);
 	}
 
 }

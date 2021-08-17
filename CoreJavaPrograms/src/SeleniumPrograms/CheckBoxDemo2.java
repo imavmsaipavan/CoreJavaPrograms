@@ -2,38 +2,53 @@ package SeleniumPrograms;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.Assert;
+import org.testng.annotations.Test;
 
 public class CheckBoxDemo2 {
 
-	public static void main(String[] args) {
-		System.setProperty("webdriver.chrome.driver", "C:\\Users\\mani\\Desktop\\Drivers\\chromedriver_win32\\chromedriver.exe");
-	     WebDriver driver = new ChromeDriver();
-	     driver.get("https://demos.devexpress.com/aspxeditorsdemos/ListEditors/MultiSelect.aspx");
+
+	WebDriver driver;
+	
+	String checkBoxPath="//*[@id='ctl00_mainContent_chk_friendsandfamily']";
+	
+	public  CheckBoxDemo2() {
+		System.setProperty("webdriver.chrome.driver", "E:\\SAI\\Drivers\\chromedriver_win32\\chromedriver.exe");
+	     driver = new ChromeDriver();
+	     driver.get("https://www.spicejet.com/");
 	     
-	     boolean display= driver.findElement(By.xpath("//*[@id='ContentHolder_lbFeatures_TG_D']")).isDisplayed();
-	     boolean enable= driver.findElement(By.xpath("//*[@id='ContentHolder_lbFeatures_TG_D']")).isEnabled();
-	     boolean select = driver.findElement(By.xpath("//*[@id='ContentHolder_lbFeatures_TG_D']")).isSelected();
-	    
-	     if(display==true) {
-	    	 System.out.println("CheckBox is displaying");
-	    	 if(enable==true){
-	        	 System.out.println("CheckBox is enabled");	 
-	         }
-	      }
-	     else {
-	    	 System.out.println("element is not displaying");
-	     }
-	     
-	     if(select==true) {
-   	   	 System.out.println("CheckBox is selected");
-       }
-	     else {
-	    	 System.out.println("CheckBox is not selected");
-	     }
-	     
-        driver.findElement(By.xpath("//*[@id='ContentHolder_lbFeatures_TG_D']")).click();
-        
-       	   	 
-		
 	}
+	     @Test(priority = 1)
+	     public void checkBoxDisplay() {
+	     boolean display= driver.findElement(By.xpath(checkBoxPath)).isDisplayed();
+	     Assert.assertTrue(display);
+	     }
+	     
+	     @Test(priority = 2)
+	     public void checkBoxEnable() {
+	     boolean enable= driver.findElement(By.xpath(checkBoxPath)).isEnabled();
+	     Assert.assertTrue(enable);
+	     }
+	     
+	     @Test(priority = 3)
+	     public void checkBoxSelect() {
+	     boolean select = driver.findElement(By.xpath(checkBoxPath)).isSelected();
+	     Assert.assertFalse(select);	    
+	     }
+	     
+	     @Test(priority = 4)
+	     public void checkBoxClick()
+	     {
+	    	driver.findElement(By.xpath(checkBoxPath)).click();
+	    	 
+	     }
+	     
+	     @Test(priority = 5)
+	     public void checkBoxDisplay1() {
+	     boolean newSelect = driver.findElement(By.xpath(checkBoxPath)).isSelected();
+	     Assert.assertTrue(newSelect);	
+	     
+	}
+	
+
 }

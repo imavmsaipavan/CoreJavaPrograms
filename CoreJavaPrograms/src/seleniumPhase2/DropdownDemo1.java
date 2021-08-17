@@ -5,6 +5,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.Select;
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
 public class DropdownDemo1 {
@@ -24,6 +25,6 @@ public class DropdownDemo1 {
          WebElement dropDown2= driver.findElement(By.xpath("//select[@name='toPort']"));
          Select SelectDropDown2= new Select(dropDown2);
          SelectDropDown2.selectByValue("London");
-	}
+	   }
 
 }

@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.rbg.utilities.writeDataInExcel">
+      <class name="com.xpathDemo.XpathDemo1">
         <methods>
-          <include name="writeData"/>
+          <include name="LoginFB"/>
         </methods>
-      </class> <!-- com.rbg.utilities.writeDataInExcel -->
+      </class> <!-- com.xpathDemo.XpathDemo1 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

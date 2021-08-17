@@ -12,12 +12,11 @@ import org.testng.annotations.Test;
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.MediaEntityBuilder;
-import com.aventstack.extentreports.Status;
 import com.aventstack.extentreports.markuputils.ExtentColor;
 import com.aventstack.extentreports.markuputils.MarkupHelper;
 import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
 import com.rbg.utilities.GenericFuntion1;
-
+import com.aventstack.extentreports.Status;
 
 public class LoginTest {
 
@@ -44,8 +43,6 @@ public class LoginTest {
 		GenericFuntion1 key = new GenericFuntion1();
 		key.openBrowser("Chrome");
 		key.enterURL("http://demo.guru99.com/test/newtours/index.php");
-		key.enterData("name", "userName", "Mercury");
-		key.enterData("name", "password", "Password");
 
 	    TakesScreenshot ts = (TakesScreenshot) key.driver;
 		File source = ts.getScreenshotAs(OutputType.FILE);
@@ -53,7 +50,7 @@ public class LoginTest {
 		String destination = System.getProperty("user.dir")+"\\Screenshots\\test1.png";
 		File finalDestination = new File(destination);
 		FileUtils.copyFile(source, finalDestination);
-		extentLogger.log(Status.PASS,MarkupHelper.createLabel("TestCase1" , ExtentColor.GREEN));
+		extentLogger.log(Status.PASS,MarkupHelper.createLabel("TestCaseDemo1" , ExtentColor.GREEN));
     	extentLogger.pass("",MediaEntityBuilder.createScreenCaptureFromPath(destination).build());
     	
 	}
@@ -66,16 +63,14 @@ public class LoginTest {
 		GenericFuntion1 key = new GenericFuntion1();
 		key.openBrowser("Chrome");
 		key.enterURL("http://demo.guru99.com/test/newtours/index.php");
-		key.enterData("name", "userName", "invalid");
-		key.enterData("name", "password", "Password");
 
 	    TakesScreenshot ts = (TakesScreenshot) key.driver;
 		File source = ts.getScreenshotAs(OutputType.FILE);
 
-		String destination = System.getProperty("user.dir")+"\\Screenshots\\test2.png";
+		String destination = System.getProperty("user.dir")+"\\Screenshots\\test3.png";
 		File finalDestination = new File(destination);
 		FileUtils.copyFile(source, finalDestination);
-		extentLogger.log(Status.PASS,MarkupHelper.createLabel("TestCase1" , ExtentColor.RED));
+		extentLogger.log(Status.PASS,MarkupHelper.createLabel("TestCaseDemo2" , ExtentColor.RED));
     	extentLogger.pass("",MediaEntityBuilder.createScreenCaptureFromPath(destination).build());
     	
 	}

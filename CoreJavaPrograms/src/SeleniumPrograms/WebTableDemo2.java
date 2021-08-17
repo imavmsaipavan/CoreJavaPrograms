@@ -10,8 +10,9 @@ import org.openqa.selenium.chrome.ChromeDriver;
 public class WebTableDemo2 {
 
 	public static void main(String[] args) {
-		System.setProperty("webdriver.chrome.driver", "C:\\Users\\mani\\Desktop\\Drivers\\chromedriver_win32\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "./Webdrivers/chromedriver.exe");
 	     WebDriver driver = new ChromeDriver();
+	     driver.manage().window().maximize();
 	     driver.get("http://only-testing-blog.blogspot.com/2013/09/test.html");
 		
 		List<WebElement> rowsList=driver.findElements(By.xpath("//*[@id='post-body-6522850981930750493']/div[1]/table/tbody/tr"));
@@ -27,7 +28,11 @@ public class WebTableDemo2 {
         for(int i=1;i<=rowCount;i++) {
         	for(int j=1;j<=columnCount;j++) {
         		String text=driver.findElement(By.xpath(xpath1+i+xpath2+j+xpath3)).getText();
-        		System.out.println("text "+text);
+ String data=driver.findElement(By.xpath("//*[@id='post-body-6522850981930750493']/div[1]/table/tbody/tr["
+        		+i+"]/td["+j+"]")).getText();
+        		System.out.println(text);
+        		System.out.println(data);
+        		
         	}
         }
         

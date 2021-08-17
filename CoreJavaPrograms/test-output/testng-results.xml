@@ -1,17 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results skipped="0" failed="0" ignored="0" total="0" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-04-17T08:13:28 IST" name="Default suite" finished-at="2021-04-17T08:13:40 IST" duration-ms="12812">
+  <suite name="Default suite" duration-ms="34" started-at="2021-08-11T22:04:18 IST" finished-at="2021-08-11T22:04:18 IST">
     <groups>
     </groups>
-    <test started-at="2021-04-17T08:13:28 IST" name="Default test" finished-at="2021-04-17T08:13:40 IST" duration-ms="12812">
-      <class name="FrameWorkDemo1.ExtentReportDemo3">
-        <test-method signature="externalReportTest1()[pri:0, instance:FrameWorkDemo1.ExtentReportDemo3@1f97cf0d]" started-at="2021-04-17T08:13:28 IST" name="externalReportTest1" finished-at="2021-04-17T08:13:40 IST" duration-ms="12664" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- externalReportTest1 -->
-      </class> <!-- FrameWorkDemo1.ExtentReportDemo3 -->
+    <test name="Default test" duration-ms="34" started-at="2021-08-11T22:04:18 IST" finished-at="2021-08-11T22:04:18 IST">
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

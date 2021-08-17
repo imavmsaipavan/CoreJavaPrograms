@@ -9,11 +9,13 @@ public class PropertiesDemo1 {
 	public static void main(String[] args) throws IOException {
 
 		
-		FileInputStream fileRead = new FileInputStream(System.getProperty("user.dir")+"\\configProperties\\Test1.properties");
+		FileInputStream fileRead = new FileInputStream(".//configProperties//Test1.properties");
 		Properties p1=new Properties();
 		p1.load(fileRead);
 		
-		String data1= (String)p1.get("userName");
+//		String data1= (String)p1.get("userName");
+		String data1=p1.getProperty("userName");
+		
 		System.out.println(data1);
 		
 		String data2= (String)p1.get("login");

@@ -8,10 +8,10 @@ public class CloseAndQuitDemo1 {
 	@Test
 	public void closeAndQuitWindow() 
 	{
-	System.setProperty("webdriver.chrome.driver", "C:\\Users\\mani\\Desktop\\Drivers\\chromedriver_win32\\chromedriver.exe");
+	System.setProperty("webdriver.chrome.driver", ".//WebDrivers//chromedriver.exe");
     WebDriver driver = new ChromeDriver();
-    driver.get("http://demo.guru99.com/test/newtours/index.php");
+    driver.get("https://www.naukri.com/");
 //    driver.close();
-    driver.quit();
+      driver.quit();
 }
 }

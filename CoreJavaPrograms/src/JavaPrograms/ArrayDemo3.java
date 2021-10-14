@@ -1,4 +1,7 @@
 package JavaPrograms;
+
+import org.openqa.selenium.remote.DesiredCapabilities;
+
 public class ArrayDemo3 {
 
 	public static void main(String[] args) {
@@ -13,6 +16,7 @@ public class ArrayDemo3 {
 	       {
 	    	   System.out.print(arr[i]);
 	    	   System.out.print("");
+	    	   
 	       }
 	}
 	

@@ -23,7 +23,8 @@ public class PopUpWindowDemo1 {
         System.out.println(getTitle);
         		
         Set<String> winIds=driver.getWindowHandles(); //it will handle more than one window
-        
+        int count=winIds.size();
+        System.out.println(count);
         Iterator<String> winIdsList=winIds.iterator(); 
         // Switch to windows
         String parentWinID = winIdsList.next();

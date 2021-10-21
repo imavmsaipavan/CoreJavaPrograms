@@ -12,8 +12,13 @@ public class ScrollDown {
 	      driver = new ChromeDriver();
 	      driver.manage().window().maximize();
 	     driver.get("https://www.guru99.com/blockchain-tutorial.html");
-	     Thread.sleep(3000);
+	     scrollDown();
+	    	 
+	     }
+	public static void scrollDown() throws InterruptedException {
+		for(int i=1;i<=100;i++) {
+	     Thread.sleep(30000);
 		  ((JavascriptExecutor) driver).executeScript("window.scrollBy(0,250)", "");
 	  }
-
+	}
 }

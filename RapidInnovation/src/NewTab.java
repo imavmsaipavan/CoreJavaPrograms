@@ -15,7 +15,7 @@ public class NewTab {
 		Actions act= new Actions(driver);
 		act.sendKeys(Keys.CONTROL+"t");
 		System.out.println("done");
-		
+		  
 	}
 
 }
